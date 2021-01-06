@@ -2182,6 +2182,7 @@ ol {
 .service-li li {
   /* background: orange; */
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .milestone {
