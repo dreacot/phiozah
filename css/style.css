@@ -2179,7 +2179,7 @@ ol {
   color: #fff;
 }
 
-.service-li li {
+.service-li   li {
   /* background: orange; */
   color: #fff;
   margin-bottom: 10px;
