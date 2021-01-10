@@ -54,7 +54,7 @@
 		</div> -->
 		<div class="site-navbar">
 			<!-- Logo -->
-			<a href="index.html" class="site-logo">
+			<a href="index.php" class="site-logo">
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="header-right">
@@ -81,21 +81,21 @@
 			<!-- Menu -->
 			<nav class="site-nav-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About us</a></li>
-					<li class="active"><a href="solutions.html">Our Services</a>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About us</a></li>
+					<li class="active"><a href="solutions.php">Our Services</a>
 						<ul class="sub-menu">
-							<li><a href="solutions.html#section1">Procurement & Supply Chain Management</a></li>
-							<li><a href="solutions.html#section1">Engineering Support Services and High Definition
+							<li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
+							<li><a href="solutions.php#section1">Engineering Support Services and High Definition
 									Surveying</a></li>
-							<li><a href="solutions.html#section1">Project Management</a></li>
-							<li><a href="solutions.html#section1">Technical Manpower Supply</a></li>
-							<li><a href="solutions.html#section1">Meet & Greet Service</a></li>
+							<li><a href="solutions.php#section1">Project Management</a></li>
+							<li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
+							<li><a href="solutions.php#section1">Meet & Greet Service</a></li>
 						</ul>
 					</li>
 
 
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -425,12 +425,12 @@
 					<div class="footer-widget">
 						<h2 class="fw-title">Our Services</h2>
 						<ul>
-							<li><a href="solutions.html#section1">Procurement & Supply Chain Management</a></li>
-							<li><a href="solutions.html#section1">
+							<li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
+							<li><a href="solutions.php#section1">
 									Engineering Support Services and High Definition Surveying</a></li>
-							<li><a href="solutions.html#section1">
+							<li><a href="solutions.php#section1">
 									Project Management</a></li>
-							<li><a href="solutions.html#section1">
+							<li><a href="solutions.php#section1">
 									Technical Manpower Supply</a></li>
 						</ul>
 					</div>
@@ -472,11 +472,11 @@
 					</div>
 					<div class="col-lg-7 order-1 order-lg-2 p-0">
 						<ul class="footer-menu">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About us</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about.php">About us</a></li>
 							<li class="active"><a href="Our Services.html">Our Services</a></li>
 
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.php">Contact</a></li>
 						</ul>
 					</div>
 				</div>
