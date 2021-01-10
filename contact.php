@@ -1,257 +1,118 @@
 <?php
-  
-if($_POST) {
-    $visitor_name = "";
-    $visitor_email = "";
-    $email_title = "";
-    $visitor_message = "";
-    $email_body = "<div>";
-      
-    if(isset($_POST['visitor_name'])) {
-        $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
-        $email_body .= "<div>
-                           <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
-                        </div>";
-    }
- 
-    if(isset($_POST['visitor_email'])) {
-        $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-        $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
-        $email_body .= "<div>
-                           <label><b>Visitor Email:</b></label>&nbsp;<span>".$visitor_email."</span>
-                        </div>";
-    }
-      
-    if(isset($_POST['email_title'])) {
-        $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
-        $email_body .= "<div>
-                           <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$email_title."</span>
-                        </div>";
-    }
-      
-    if(isset($_POST['visitor_message'])) {
-        $visitor_message = htmlspecialchars($_POST['visitor_message']);
-        $email_body .= "<div>
-                           <label><b>Visitor Message:</b></label>
-                           <div>".$visitor_message."</div>
-                        </div>";
-	}
-	
-    $recipient = "kennedyizuegbu@yahoo.com";
 
-      
-    $email_body .= "</div>";
- 
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
-      
-    if(mail($recipient, $email_title, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
-    } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+$errors = [];
+$errorMessage = '';
+
+if (!empty($_POST)) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
     }
-      
-} else {
-    echo '<p>Something went wrong</p>';
+
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
+
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
+
+
+    if (empty($errors)) {
+        $toEmail = 'kennedyizuegbu@yahoo.com';
+        $emailSubject = 'New email from your contant form';
+        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $body = join(PHP_EOL, $bodyParagraphs);
+
+        if (mail($toEmail, $emailSubject, $body, $headers)) {
+            header('Location: thank-you.html');
+        } else {
+            $errorMessage = 'Oops, something went wrong. Please try again later';
+        }
+    } else {
+        $allErrors = join('<br/>', $errors);
+        $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+    }
 }
+
 ?>
 
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
-    <title>Phiozah | Contact Us</title>
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="Phiozah Limited is a fast rising 100% Nigerian indigenous oil services company, incorporated to be a leading provider of procurement & supply chain services, project management, Engineering & Engineering support services, offshore vessel support and technical manpower supply in Nigerian and West African.">
-    <meta name="keywords" content="phiozah, oil and gas, oil services, procurement, vessel support">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="shortcut icon" />
-
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap"
-        rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-
-    <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
-
-
-    <!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
+<html>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <form action="/mail_form.php" method="post" id="contact-form">
+        <h2>Contact us</h2>
 
-    <!-- Header section  -->
-    <header class="header-section clearfix">
-        <!-- <div class="header-top">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="col-md-6 text-md-right">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-			</div>
-		</div> -->
-        <div class="site-navbar">
-            <!-- Logo -->
-            <a href="index.php" class="site-logo">
-                <img src="img/logo.png" alt="">
-            </a>
-            <div class="header-right">
-                <div class="header-info-box">
-                    <div class="hib-icon">
-                        <img src="img/icons/phone.png" alt="" class="">
-                    </div>
-                    <div class="hib-text">
-                        <h6>+234 705 3945 678</h6>
-                        <p>info@phiozah.com</p>
-                    </div>
-                </div>
-                <!-- <div class="header-info-box">
-					<div class="hib-icon">
-						<img src="img/icons/map-marker.png" alt="" class="">
-					</div>
-					<div class="hib-text">
-						<h6>Anthony Village, Lekki</h6>
-						<p>Lagos, Nigeria</p>
-					</div>
-				</div> -->
-                <!-- <button class="search-switch"><i class="fa fa-search"></i></button> -->
-            </div>
-            <!-- Menu -->
-            <nav class="site-nav-menu">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About us</a></li>
-                    <li><a href="solutions.php">Our Services</a>
-                        <ul class="sub-menu">
-                            <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
-                            <li><a href="solutions.php#section1">Project Management</a></li>
-                            <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
-                            <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
-                        </ul>
-                    </li>
-                    </li>
+        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+        <p>
+            <label>First Name:</label>
+            <input name="name" type="text" value="dima" />
+        </p>
+        <p>
+            <label>Email Address:</label>
+            <input style="cursor: pointer;" name="email" value="dima@dima.com" type="text" />
+        </p>
+        <p>
+            <label>Message:</label>
+            <textarea name="message">dima</textarea>
+        </p>
 
-                    <li class="active"><a href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </form>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+    const constraints = {
+        name: {
+            presence: {
+                allowEmpty: false
+            }
+        },
+        email: {
+            presence: {
+                allowEmpty: false
+            },
+            email: true
+        },
+        message: {
+            presence: {
+                allowEmpty: false
+            }
+        }
+    };
 
-        </div>
-    </header>
-    <!-- Header section end  -->
+    const form = document.getElementById('contact-form');
 
-    <!-- Page top section  -->
-    <section class="page-top-section set-bg" data-setbg="img/page-top-bg/4.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <h2>Contact Us</h2>
-                    <p>Need to get intouch with us?, send us an email and we'd get back to you </p>
-                    <!-- <a href="" class="site-btn">Say hello</a> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Page top section end  -->
+    form.addEventListener('submit', function(event) {
+        const formValues = {
+            name: form.elements.name.value,
+            email: form.elements.email.value,
+            message: form.elements.message.value
+        };
 
-    <!-- Map section  -->
-    <!-- <div class="map-section">
-		<div class="container">
-			<div class="map-info">
-				<img src="img/logo-contact.png" alt="">
-				<p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Quisque orci purus, sodales in est quis,
-					blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
-			</div>
-		</div>
-		<div class="map">
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522"
-				style="border:0" allowfullscreen></iframe>
-		</div>
-	</div> -->
-    <!-- Map section end  -->
+        const errors = validate(formValues, constraints);
 
-    <!-- Contact section   -->
-    <section class="contact-section spad" id='section1'>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="contact-text">
-                        <h2>Get in Touch</h2>
-                        <p>If you have any further enquiries, simply fill out the form and we will get back to you as
-                            soon as we can.</p>
-                        <div class="header-info-box">
-                            <div class="hib-icon">
-                                <img src="img/icons/phone.png" alt="" class="">
-                            </div>
-                            <div class="hib-text">
-                                <h6>+234 705 3945 678</h6>
-                                <p>info@phiozah.com</p>
-                            </div>
-                        </div>
-                        <div class="header-info-box">
-                            <div class="hib-icon">
-                                <img src="img/icons/map-marker.png" alt="" class="">
-                            </div>
-                            <div class="hib-text">
-                                <h6>Anthony Village, Lekki</h6>
-                                <p>Lagos, Nigeria</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <form action="contact.php" method="post" class="contact-form">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Your Name" name="visitor_name" pattern=[A-Z\sa-z]{3,20}
-                                    required>
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Your Email" name="visitor_email" required>
-                            </div>
-                            <div class="col-lg-12">
-                                <input type="text" placeholder="Subject" name="email_title" pattern=[A-Za-z0-9\s]{8,60}>
-                            </div>
-                            <div class="col-lg-12">
-                                <textarea class="text-msg" placeholder="Message" name="visitor_message" required>
-								</textarea>
-                                <button class="site-btn" type="submit" style="background: skyblue;">send
-                                    message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact section end  -->
+        if (errors) {
+            event.preventDefault();
+            const errorMessage = Object
+                .values(errors)
+                .map(function(fieldValues) {
+                    return fieldValues.join(', ')
+                })
+                .join("\n");
 
-    <?php include 'footer.php' ?>
-
+            alert(errorMessage);
+        }
+    }, false);
+    </script>
 </body>
 
 </html>
