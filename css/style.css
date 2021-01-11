@@ -2179,7 +2179,7 @@ ol {
   color: #fff;
 }
 
-.service-li   li {
+.service-li li {
   /* background: orange; */
   color: #fff;
   margin-bottom: 10px;
@@ -2191,4 +2191,18 @@ ol {
   padding: 30px;
   border: 4px solid skyblue;
   min-height: 350px;
+}
+
+.successMessage {
+  background-color: palegreen;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.errorMessage {
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }

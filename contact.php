@@ -1,4 +1,28 @@
 <?php
+// error_reporting(error_reporting() & ~E_NOTICE);
+
+require_once('vendor/autoload.php');
+use Mailgun\Mailgun;
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+
+function send_mail($subject, $msg) {
+
+	# Instantiate the client.
+	$mgClient = Mailgun::create('key-57fc8f54db5894242b6f735919f02f22', 'https://api.mailgun.net/v3/phiozah.com');
+	$domain = "phiozah.com";
+	$params = array(
+	'from'    => 'Phiozah Contact Form <no-reply@phiozah.com>',
+	'to'      => 'phiozahltd@gmail.com',
+	'subject' =>  $subject,
+	'html'    => $msg
+	);
+
+	# Make the call to the client.
+	$result = $mgClient->messages()->send($domain, $params);
+
+	return $result;
+}
   
 if($_POST) {
     $visitor_name = "";
@@ -10,7 +34,7 @@ if($_POST) {
     if(isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
+                           <label><b>Client Name:</b></label>&nbsp;<span>".$visitor_name."</span>
                         </div>";
     }
  
@@ -18,7 +42,7 @@ if($_POST) {
         $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
         $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>Visitor Email:</b></label>&nbsp;<span>".$visitor_email."</span>
+                           <label><b>Client Email:</b></label>&nbsp;<span>".$visitor_email."</span>
                         </div>";
     }
       
@@ -32,28 +56,21 @@ if($_POST) {
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
         $email_body .= "<div>
-                           <label><b>Visitor Message:</b></label>
+                           <label><b>Client Message:</b></label>
                            <div>".$visitor_message."</div>
                         </div>";
 	}
-	
-    $recipient = "kennedyizuegbu@yahoo.com";
 
-      
-    $email_body .= "</div>";
- 
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
-      
-    if(mail($recipient, $email_title, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
-    } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
-    }
-      
-} else {
-    echo '<p>Something went wrong</p>';
+	$email_body .= "</div>";
+	
+	if(send_mail($email_title, $email_body)) {
+		$message = "Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.";
+	    $type = "success";
+	} else {
+		$message = "We are sorry but the email did not go through.";
+	    $type = "error";
+	}
+
 }
 ?>
 
@@ -226,6 +243,13 @@ if($_POST) {
                 <div class="col-lg-8">
                     <form action="contact.php" method="post" class="contact-form">
                         <div class="row">
+
+                            <div id="statusMessage" class="col-lg-12">
+                                <?php if (! empty($message)) {?>
+                                <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                                <?php
+                       		}?>
+                            </div>
                             <div class="col-lg-6">
                                 <input type="text" placeholder="Your Name" name="visitor_name" pattern=[A-Z\sa-z]{3,20}
                                     required>
