@@ -1,10 +1,23 @@
 <?php
+session_start();
 // error_reporting(error_reporting() & ~E_NOTICE);
 
 require_once('vendor/autoload.php');
 use Mailgun\Mailgun;
 // ini_set('display_errors', 1);
 // error_reporting(E_ALL);
+// use DevCoder\DotEnv;
+// echo __DIR__ . '/.env';
+// (new DotEnv(__DIR__ . '/.env'))->load();
+// $dotenv = new Dotenv\Dotenv(__DIR__);
+// $dotenv->load();
+// var_dump(getenv('MAILGUN_API_KEY'));
+// echo getenv('MAILGUN_API_KEY');
+// echo getenv('MAILGUN_DOMAIN');
+// echo getenv('RECEPIENT_EMAIL') ;
+// echo 'hi';
+
+
 
 function send_mail($subject, $msg) {
 
@@ -30,6 +43,7 @@ if($_POST) {
     $email_title = "";
     $visitor_message = "";
     $email_body = "<div>";
+    $captcha = "";
       
     if(isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
@@ -59,17 +73,31 @@ if($_POST) {
                            <label><b>Client Message:</b></label>
                            <div>".$visitor_message."</div>
                         </div>";
+    }
+    
+    if(isset($_POST['captcha'])) {
+        $captcha = filter_var($_POST["captcha"], FILTER_SANITIZE_STRING);
 	}
 
 	$email_body .= "</div>";
-	
-	if(send_mail($email_title, $email_body)) {
-		$message = "Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.";
-	    $type = "success";
-	} else {
-		$message = "We are sorry but the email did not go through.";
+    
+    if(empty($captcha)) {
+        $message = "Please enter the captcha.";
 	    $type = "error";
-	}
+    } else if($_SESSION['CAPTCHA_CODE'] == $captcha){
+        if(send_mail($email_title, $email_body)) {
+            $message = "Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.";
+            $type = "success";
+        } else {
+            $message = "We are sorry but the email did not go through.";
+            $type = "error";
+        }
+    } else {
+        $message = "Captcha is invalid";
+	    $type = "error";
+    }
+      
+	
 
 }
 ?>
@@ -259,6 +287,18 @@ if($_POST) {
                             </div>
                             <div class="col-lg-12">
                                 <input type="text" placeholder="Subject" name="email_title" pattern=[A-Za-z0-9\s]{8,60}>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <img width="80%" src="scripts/captcha.php" alt="PHP Captcha">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <input type="text" class="form-control" name="captcha" id="captcha"
+                                            placeholder="Enter Captcha" required>
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="col-lg-12">
                                 <textarea class="text-msg" placeholder="Message" name="visitor_message" required>
