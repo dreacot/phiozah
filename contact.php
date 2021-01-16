@@ -6,33 +6,27 @@ require_once('vendor/autoload.php');
 use Mailgun\Mailgun;
 // ini_set('display_errors', 1);
 // error_reporting(E_ALL);
-// use DevCoder\DotEnv;
-// echo __DIR__ . '/.env';
-// (new DotEnv(__DIR__ . '/.env'))->load();
-// $dotenv = new Dotenv\Dotenv(__DIR__);
-// $dotenv->load();
-// var_dump(getenv('MAILGUN_API_KEY'));
-// echo getenv('MAILGUN_API_KEY');
-// echo getenv('MAILGUN_DOMAIN');
-// echo getenv('RECEPIENT_EMAIL') ;
-// echo 'hi';
 
-
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
+$dotenv->load();
 
 function send_mail($subject, $msg) {
 
+    $mg = new Mailgun($_ENV['MAILGUN_API_KEY']);
+
 	# Instantiate the client.
-	$mgClient = Mailgun::create('key-57fc8f54db5894242b6f735919f02f22', 'https://api.mailgun.net/v3/phiozah.com');
-	$domain = "phiozah.com";
+	// $mgClient = Mailgun::create('key-57fc8f54db5894242b6f735919f02f22', 'https://api.mailgun.net/v3/phiozah.com');
+	$domain = $_ENV['MAILGUN_DOMAIN'];
 	$params = array(
 	'from'    => 'Phiozah Contact Form <no-reply@phiozah.com>',
-	'to'      => 'phiozahltd@gmail.com',
-	'subject' =>  $subject,
+	'to'      => $_ENV['RECEPIENT_EMAIL'],
+	'subject' => $subject,
 	'html'    => $msg
-	);
-
+    );
+    
 	# Make the call to the client.
-	$result = $mgClient->messages()->send($domain, $params);
+    // $result = $mgClient->messages()->send($domain, $params);
+    $result = $mg->sendMessage($domain, $params);
 
 	return $result;
 }
@@ -96,8 +90,6 @@ if($_POST) {
         $message = "Captcha is invalid";
 	    $type = "error";
     }
-      
-	
 
 }
 ?>
@@ -283,7 +275,7 @@ if($_POST) {
                                     required>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Email" name="visitor_email" required>
+                                <input type="email" placeholder="Your Email" name="visitor_email" required>
                             </div>
                             <div class="col-lg-12">
                                 <input type="text" placeholder="Subject" name="email_title" pattern=[A-Za-z0-9\s]{8,60}>
