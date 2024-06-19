@@ -15,7 +15,7 @@ function send_mail($subject, $msg) {
     $mg = new Mailgun($_ENV['MAILGUN_API_KEY']);
 
 	# Instantiate the client.
-	// $mgClient = Mailgun::create('key-57fc8f54db5894242b6f735919f02f22', 'https://api.mailgun.net/v3/phiozah.com');
+	// $mgClient = Mailgun::create('key-example', 'https://api.mailgun.net/v3/phiozah.com');
 	$domain = $_ENV['MAILGUN_DOMAIN'];
 	$params = array(
 	'from'    => 'Phiozah Contact Form <no-reply@phiozah.com>',
@@ -254,7 +254,7 @@ if($_POST) {
                                 <img src="img/icons/map-marker.png" alt="" class="">
                             </div>
                             <div class="hib-text">
-                                <h6>Anthony Village, Lekki</h6>
+                                <h6>Anthony Village</h6>
                                 <p>Lagos, Nigeria</p>
                             </div>
                         </div>
