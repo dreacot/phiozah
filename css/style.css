@@ -515,6 +515,7 @@ ol {
   width: 0;
   height: 7px;
   left: 0;
+  /* top: 70%; */
   bottom: 0;
   background: skyblue;
   -webkit-transition: all 0.4s;
@@ -1802,6 +1803,23 @@ ol {
 }
 
 /* ----------------
+  Gallery Tab
+ ---------------------*/
+.gallery-tabs-item {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid #b6ddfa;
+}
+
+.gallery-tabs-item:hover,
+.gallery-tabs-item.active {
+  background: #b6ddfa;
+}
+
+/* ----------------
  Responsive
   ---------------------*/
 
@@ -2205,4 +2223,107 @@ ol {
   padding: 10px;
   border-radius: 5px;
   color: white;
+}
+
+.gallery-tabs {
+  width: fit-content;
+  display: flex;
+  font-weight: bold;
+  gap: 5px;
+}
+
+.gallery-tabs-item {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(4, 139, 192);
+  border: 2px solid rgb(4, 139, 192);
+}
+
+.gallery-tabs-item.active,
+.gallery-tabs-item.active:hover {
+  cursor: pointer;
+  background-color: rgb(4, 139, 192);
+  color: white;
+  border: 2px solid rgb(4, 139, 192);
+}
+
+.gallery-tabs-item:hover,
+.gallery-tabs-item:active {
+  cursor: pointer;
+  background-color: rgb(4, 139, 192);
+  color: white;
+}
+
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 20px;
+  padding-top: 40px;
+  margin-left: 0;
+}
+
+.gallery-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: display 0.3s ease;
+}
+
+.hide {
+  display: none;
+}
+
+/* hover.css class */
+.hvr-grow {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: transform 1s ease-in-out; /* slower and correct */
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 1px solid #17172d;
+}
+
+.partners-section {
+  padding: 50px 0;
+}
+
+.partners-logos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 70px;
+  gap: 50px;
+  place-items: center;
+  padding-top: 50px;
+}
+
+.partners-logos-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(4, 139, 192);
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
 }

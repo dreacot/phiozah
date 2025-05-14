@@ -1,3 +1,8 @@
+  <!-- scroll to top -->
+  <div class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fa fa-angle-up"></i>
+  </div>
+
 <!-- Footer section -->
 <footer class="footer-section spad">
     <div class="container">
@@ -13,6 +18,7 @@
                         <a href=""><i class="fa fa-facebook"></i></a>
                         <a href=""><i class="fa fa-twitter"></i></a>
                         <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/phiozah-limited/" target=_blank><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -23,6 +29,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="solutions.php">Our Services</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
@@ -82,8 +89,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="Our Services.html">Our Services</a></li>
-
-                        <li class="active"><a href="contact.php">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
             </div>

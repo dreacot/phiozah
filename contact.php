@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 // error_reporting(error_reporting() & ~E_NOTICE);
 
 require_once('vendor/autoload.php');
@@ -100,8 +101,7 @@ if($_POST) {
 <head>
     <title>Phiozah | Contact Us</title>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Phiozah Limited is a fast rising 100% Nigerian indigenous oil services company, incorporated to be a leading provider of procurement & supply chain services, project management, Engineering & Engineering support services, offshore vessel support and technical manpower supply in Nigerian and West African.">
+    <meta name="description" content="Phiozah Limited is a fast rising 100% Nigerian indigenous oil services company, incorporated to be a leading provider of procurement & supply chain services, project management, Engineering & Engineering support services, offshore vessel support and technical manpower supply in Nigerian and West African.">
     <meta name="keywords" content="phiozah, oil and gas, oil services, procurement, vessel support">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -179,20 +179,26 @@ if($_POST) {
             <nav class="site-nav-menu">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About us</a></li>
+                    <li><a href="about.php">About us</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.php#section1">Who We Are</a></li>
+                            <li><a href="about.php#section2">Our Vision</a></li>
+                            <li><a href="about.php#section3">Partners</a></li>
+                            <!-- <li><a href="about.php#section4">Projects</a></li> -->
+                            <li><a href="about.php#section5">Quality Policy</a></li>
+                        </ul>
+                    </li>
                     <li><a href="solutions.php">Our Services</a>
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
+                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                         </ul>
                     </li>
-                    </li>
-
-                    <li class="active"><a href="contact.php">Contact</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li class="active"><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 

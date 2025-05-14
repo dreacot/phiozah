@@ -83,20 +83,26 @@
             <nav class="site-nav-menu">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About us</a></li>
+                    <li><a href="about.php">About us</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.php#section1">Who We Are</a></li>
+                            <li><a href="about.php#section2">Our Vision</a></li>
+                            <li><a href="about.php#section3">Partners</a></li>
+                            <!-- <li><a href="about.php#section4">Projects</a></li> -->
+                            <li><a href="about.php#section5">Quality Policy</a></li>
+                        </ul>
+                    </li>
                     <li class="active"><a href="solutions.php">Our Services</a>
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
+                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                         </ul>
                     </li>
-
-
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -123,8 +129,7 @@
     <section class="services-2-section spad">
         <div class="container">
             <div class="service-text">
-                <h2>At Phiozah, we understand the importance of timely delivery of materials and or services per desired
-                    quality.</h2>
+                <h2>At Phiozah, we understand the importance of timely delivery of materials and or services per desired  quality.</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
