@@ -455,6 +455,14 @@ ol {
   font-size: 14px;
 }
 
+.hib-text a{
+  color: gray;
+}
+
+.hib-text a:hover{
+  color: skyblue;
+}
+
 .header-info-box .hib-text p {
   margin-bottom: 0;
 }
@@ -2326,4 +2334,8 @@ ol {
   font-size: 24px;
   cursor: pointer;
   z-index: 999;
+}
+
+.quality-section {
+  background-color: aliceblue;
 }

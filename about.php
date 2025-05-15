@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>Phiozah | About Us</title>
@@ -64,8 +64,8 @@
                         <img src="img/icons/phone.png" alt="" class="">
                     </div>
                     <div class="hib-text">
-                        <h6>+234 705 3945 678</h6>
-                        <p>info@phiozah.com</p>
+                        <h6><a href="tel:+234 705 3945 678">+234 705 3945 678</a></h6>
+                        <a href="mailto:info@phiozah.com">info@phiozah.com</a>
                     </div>
                 </div>
                 <!-- <div class="header-info-box">

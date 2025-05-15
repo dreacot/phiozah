@@ -65,7 +65,8 @@
                             <img src="img/icons/phone.png" alt="" class="">
                         </div>
                         <div class="fib-text">
-                            <p>+234 705 3945 678<br>info@phiozah.com</p>
+                            <p><a href="tel:+234 705 3945 678">+234 705 3945 678</a></p>
+                            <a href="mailto:info@phiozah.com">info@phiozah.com</a></p>
                         </div>
                     </div>
                 </div>
