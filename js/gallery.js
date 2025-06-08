@@ -1,6 +1,4 @@
-/*------------------
-		Gallery Fiter
-	--------------------*/
+/* Gallery Fiter*/
 
 const filterContainer = document.querySelector(".gallery-tabs");
 const filterBtns = filterContainer.querySelectorAll(".gallery-tabs-item");
@@ -30,9 +28,7 @@ filterContainer.addEventListener("click", (e) => {
 	}
 });
 
-/*------------------
-	Gallery Modal
---------------------*/
+/*Gallery Modal */
 
 let visibleImages = [];
 let currentIndex = 0;
@@ -44,11 +40,11 @@ function updateVisibleImages() {
 function showModal(index) {
   updateVisibleImages();
   currentIndex = index;
-  $('#modalImage').attr('src', visibleImages[currentIndex].src);
-  $('#galleryModal').modal('show');
+	document.querySelector('#modalImage').setAttribute('src', visibleImages[currentIndex].src)
+	document.getElementById('galleryModal').classList.add('show')
 }
 
-// Update click handlers to use visibleImages
+/* Update click handlers to use visibleImages*/
 document.querySelectorAll('.gallery-img').forEach((img) => {
   img.addEventListener('click', function () {
     updateVisibleImages();
@@ -60,19 +56,25 @@ document.querySelectorAll('.gallery-img').forEach((img) => {
   });
 });
 
+document.getElementById('close').onclick = function() {
+	document.getElementById('galleryModal').classList.remove('show')
+};
+
+
 document.getElementById('prevImg').onclick = function() {
   updateVisibleImages();
   currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
-  $('#modalImage').attr('src', visibleImages[currentIndex].src);
+	document.querySelector('#modalImage').setAttribute('src', visibleImages[currentIndex].src)
+
 };
 
 document.getElementById('nextImg').onclick = function() {
   updateVisibleImages();
   currentIndex = (currentIndex + 1) % visibleImages.length;
-  $('#modalImage').attr('src', visibleImages[currentIndex].src);
+	document.querySelector('#modalImage').setAttribute('src', visibleImages[currentIndex].src)
 };
 
-// Make gallery images and tabs open modal/filter on Enter/Space
+/* Make gallery images and tabs open modal/filter on Enter/Space */
 document.querySelectorAll('.gallery-img').forEach(function(img, idx) {
 	img.addEventListener('keydown', function(e) {
 		if (e.key === 'Enter' || e.key === ' ') {

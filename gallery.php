@@ -113,7 +113,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <h2>Our Gallery</h2>
+          <h2 style="font-weight: 600;">Our Gallery</h2>
           <p>
             Welcome to the Phiozah Gallery, where we showcase our commitment to excellence in the oil and gas industry. Our gallery features a collection of images that highlight our team in action, our state-of-the-art equipment, and the various projects we have undertaken. Each image tells a story of dedication, teamwork, and innovation that drives us forward.
           </p>
@@ -129,42 +129,51 @@
       <!-- Gallery Filter Tabs -->
       <ul class="gallery-tabs">
         <li class="gallery-tabs-item allphotos-tab active" data-filter=".all" tabindex="0" role="button" aria-pressed="true">All</li>
-        <li data-filter=".workers" class="gallery-tabs-item workers-tab" tabindex="0" role="button" aria-pressed="false">Teams</li>
         <li data-filter=".events" class="gallery-tabs-item events-tab" tabindex="0" role="button" aria-pressed="false">Events</li>
+        <li data-filter=".workers" class="gallery-tabs-item workers-tab" tabindex="0" role="button" aria-pressed="false">Teams</li>
       </ul>
       <!-- Gallery Filter Tabs end -->
 
       <!-- Gallery Items -->
       <div class=" gallery-items">
         <!-- Event images -->
-        <img src="img/PhiozahEvents/E4.jpg" class="events all hvr-grow gallery-img" alt="Event 1" data-index="0" tabindex="0" role="button">
-        <img src="img/PhiozahEvents/E5.jpg" class="events all hvr-grow gallery-img" alt="Event 2" data-index="1" tabindex="0" role="button">
-        <img src="img/PhiozahEvents/E6.jpg" class="events all hvr-grow gallery-img" alt="Event 3" data-index="2" tabindex="0" role="button">
-        <img src="img/PhiozahEvents/E7.jpg" class="events all hvr-grow gallery-img" alt="Event 4" data-index="3" tabindex="0" role="button">
+        <img src="img/PhiozahEvents/E1.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="0" >
+        <img src="img/PhiozahEvents/E2.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="1" >
+        <img src="img/PhiozahEvents/E3.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="2" >
+        <img src="img/PhiozahEvents/E4.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="3" >
+        <img src="img/PhiozahEvents/E5.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="4" >
+        <img src="img/PhiozahEvents/E6.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="5" >
+        <img src="img/PhiozahEvents/E7.jpg" class="events all hvr-grow gallery-img" alt="Picture from Phiozah event" data-index="6" >
         
         <!-- Team images -->
-        <img src="img/PhiozahEvents/E1.jpg" class="workers all hvr-grow gallery-img" alt="Team 1" data-index="4" tabindex="0" role="button">
-        <img src="img/PhiozahEvents/E3.jpg" class="workers all hvr-grow gallery-img" alt="Team 2" data-index="5" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w1.jpg" class="workers all hvr-grow gallery-img" alt="Team 3" data-index="6" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w2.jpg" class="workers all hvr-grow gallery-img" alt="Team 4" data-index="7" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w3.jpg" class="workers all hvr-grow gallery-img" alt="Team 5" data-index="8" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w4.jpg" class="workers all hvr-grow gallery-img" alt="Team 6" data-index="9" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w5.jpg" class="workers all hvr-grow gallery-img" alt="Team 7" data-index="10" tabindex="0" role="button">
-        <img src="img/PhiozahWorkers/w6.jpg" class="workers all hvr-grow gallery-img" alt="Team 8" data-index="11" tabindex="0" role="button">
+        <img src="img/PhiozahWorkers/w1.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="7" >
+        <img src="img/PhiozahWorkers/w2.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="8" >
+        <img src="img/PhiozahWorkers/w3.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="9" >
+        <img src="img/PhiozahWorkers/w4.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="10" >
+        <img src="img/PhiozahWorkers/w5.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="11" >
+        <img src="img/PhiozahWorkers/w6.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
       </div>
     </div>
   </section>
 
   <!-- Gallery Modal -->
-  <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:90vw;">
+  <div class="modal-bg" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:70vw;">
       <div class="modal-content bg-transparent border-0">
         <div class="modal-body text-center position-relative p-0">
-          <button type="button" class="close position-absolute" style="right:10px;top:10px; padding:3px 9px; color:red; background-color:white; opacity:1; z-index:2;" data-dismiss="modal" aria-label="Close" tabindex="0">
+
+          <!-- cancel button -->
+          <button type="button" id="close" class="close position-absolute" style="right:10px;top:10px; padding:3px 9px; color:red; background-color:white; opacity:1; z-index:2;" data-dismiss="modal" aria-label="Close" tabindex="0">
             <span aria-hidden="true">&times;</span>
           </button>
+
+          <!-- image container -->
           <img id="modalImage" src="" class="img-fluid mx-auto d-block" style="width:100%; max-width:700px; max-height:80vh; object-fit:contain; background-color: #00000066; border-radius:8px;" alt="">
+
+          <!-- prev img button -->
           <button id="prevImg" class="btn btn-light position-absolute" style="left:10px;top:50%;transform:translateY(-50%);z-index:2;" tabindex="0" aria-label="Previous image">&lt;</button>
+
+          <!-- next img button -->
           <button id="nextImg" class="btn btn-light position-absolute" style="right:10px;top:50%;transform:translateY(-50%);z-index:2;" tabindex="0" aria-label="Next image">&gt;</button>
         </div>
       </div>

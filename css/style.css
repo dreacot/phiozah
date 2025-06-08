@@ -455,11 +455,11 @@ ol {
   font-size: 14px;
 }
 
-.hib-text a{
+.hib-text a {
   color: gray;
 }
 
-.hib-text a:hover{
+.hib-text a:hover {
   color: skyblue;
 }
 
@@ -2238,6 +2238,7 @@ ol {
   display: flex;
   font-weight: bold;
   gap: 5px;
+  padding-inline: 20px;
 }
 
 .gallery-tabs-item {
@@ -2256,7 +2257,8 @@ ol {
 }
 
 .gallery-tabs-item:hover,
-.gallery-tabs-item:active {
+.gallery-tabs-item:active,
+.gallery-tabs-item:focus {
   cursor: pointer;
   background-color: rgb(4, 139, 192);
   color: white;
@@ -2267,8 +2269,30 @@ ol {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 300px;
   gap: 20px;
-  padding-top: 40px;
+  padding: 20px;
+  margin-top: 20px;
   margin-left: 0;
+  height: 660px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Scrollbar track */
+.gallery-items::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar thumb (draggable part) */
+.gallery-items::-webkit-scrollbar-thumb {
+  background-color: rgb(4, 139, 192);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Optional: Scrollbar track background */
+.gallery-items::-webkit-scrollbar-track {
+  background-color: #e0f7fc; /* A lighter shade, optional */
+  border-radius: 10px;
 }
 
 .gallery-items img {
@@ -2276,7 +2300,7 @@ ol {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  transition: display 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .hide {
@@ -2301,7 +2325,7 @@ ol {
 }
 
 .partners-section {
-  padding: 50px 0;
+  padding: 80px 0 120px 0;
 }
 
 .partners-logos-container {
@@ -2338,4 +2362,26 @@ ol {
 
 .quality-section {
   background-color: aliceblue;
+}
+
+.modal-bg {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0vw;
+  height: 0vh;
+}
+
+.modal-bg.show {
+  opacity: 1;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.599);
+  z-index: 1050;
+  transition: opacity 0.5s ease;
 }

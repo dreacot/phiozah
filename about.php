@@ -242,7 +242,7 @@
     <!-- Milestones section end -->
 
     <!-- Partners section -->
-    <section id='section3' class="partners-section">
+    <section id='section3' class="partners-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

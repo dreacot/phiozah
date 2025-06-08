@@ -141,7 +141,7 @@
                             <h5>Procurement & Supply Chain Management</h5>
                         </div>
                         <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                            procurement solutions to our client </p>
+                            procurement solutions to our client.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -177,8 +177,7 @@
                             </div>
                             <h5>Technical Manpower Supply</h5>
                         </div>
-                        <p>Our company prides itself on the ability to source highly competent and professionals to
-                            support
+                        <p>Our company prides itself on its ability to source experienced competent professionals to support
                             your operations in the areas of engineering services, offshore and onshore. </p>
                     </div>
                 </div>
@@ -193,7 +192,7 @@
                         <p>Our meet and greet services are designed bearing in mind the
                             need to provide ease and seamless airport to accommodation transition. We understand that
                             arriving
-                            in foreign airports could be unassuming </p>
+                            in foreign airports could be unassuming.</p>
                     </div>
                 </div>
             </div>
@@ -249,12 +248,9 @@
                                 <li>Strategic Sourcing</li>
                                 <li>Purchasing</li>
                                 <li>Inspection and QA/QC</li>
-                                <li> Logistics
-                                </li>
-                                <li> Warehousing and Material Management
-                                </li>
+                                <li> Logistics</li>
+                                <li> Warehousing and Material Management</li>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                             <!-- <h2>Engineering Support Services and
@@ -338,7 +334,8 @@
                                 meet you or your traveler(s) after you exit from the air-bridge and where applicable
                                 assist in
                                 ensuring smooth immigration clearance. When exiting, our team will ensure your exit is
-                                stress-free.</p>
+                                stress-free.
+                            </p>
 
                             <p>Below is a breakdown of how our Meet and Greet Service works:</p>
 

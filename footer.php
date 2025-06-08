@@ -66,7 +66,7 @@
                         </div>
                         <div class="fib-text">
                             <p><a href="tel:+234 705 3945 678">+234 705 3945 678</a></p>
-                            <a href="mailto:info@phiozah.com">info@phiozah.com</a></p>
+                            <a href="mailto:info@phiozah.com" target=_blank>info@phiozah.com</a></p>
                         </div>
                     </div>
                 </div>

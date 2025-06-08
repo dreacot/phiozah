@@ -178,7 +178,7 @@
                                 </div>
                                 <h5>Procurement & Supply Chain Management</h5>
                             </div>
-                            <p>We leverage on the professional experience of our procurement team to deliver bespoke procurement solutions to our client</p>
+                            <p>We leverage on the professional experience of our procurement team to deliver bespoke procurement solutions to our client.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -211,10 +211,10 @@
                                 </div>
                                 <h5>Technical Manpower Supply</h5>
                             </div>
-                            <p>Our company prides itself on the ability to source highly competent and professionals to support your operations in the areas of engineering services, offshore and onshore. </p>
+                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore. </p>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
@@ -225,7 +225,7 @@
                             <p>Our meet and greet services are designed bearing in mind the
                                 need to provide ease and seamless airport to accommodation transition. We understand
                                 that arriving
-                                in foreign airports could be unassuming </p>
+                                in foreign airports could be unassuming.</p>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6">
