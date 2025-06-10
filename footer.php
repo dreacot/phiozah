@@ -25,7 +25,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget">
                     <h2 class="fw-title">Useful Resources</h2>
-                    <ul>
+                    <ul class="footer-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="solutions.php">Our Services</a></li>
@@ -90,6 +90,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="Our Services.html">Our Services</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>

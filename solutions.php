@@ -288,8 +288,7 @@
                         </div>
                         <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>We pride ourselves in our ability to source highly competent professionals to support
-                                your operations in the areas of engineering services, offshore and onshore.
+                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore.
                             </p>
                             <p>We provide manpower services to support your project in the underlisted areas:</p>
                             <div class="service-li">
