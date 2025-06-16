@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>Phiozah | Engineering, Procurement, Construction & Installation (EPCI) Company</title>
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
     <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 
 
     <!--[if lt IE 9]>
@@ -65,8 +65,8 @@
                         <img src="img/icons/phone.png" alt="" class="">
                     </div>
                     <div class="hib-text">
-                        <h6>+234 705 3945 678</h6>
-                        <p>info@phiozah.com</p>
+                        <h6><a href="tel:+234 705 3945 678">+234 705 3945 678</a></h6>
+                        <a href="mailto:info@phiozah.com">info@phiozah.com</a>
                     </div>
                 </div>
                 <!-- <div class="header-info-box">
@@ -84,18 +84,25 @@
             <nav class="site-nav-menu">
                 <ul>
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About us</a></li>
+                    <li><a href="about.php">About us</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.php#section1">Who We Are</a></li>
+                            <li><a href="about.php#section2">Our Vision</a></li>
+                            <li><a href="about.php#section3">Partners</a></li>
+                            <!-- <li><a href="about.php#section4">Projects</a></li> -->
+                            <li><a href="about.php#section5">Quality Policy</a></li>
+                        </ul>
+                    </li>
                     <li><a href="solutions.php">Our Services</a>
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
+                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                         </ul>
                     </li>
-
+                    <li><a href="gallery.php">Gallery</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
@@ -160,7 +167,7 @@
     <section class="services-section">
         <div class="services-warp">
             <div class="container">
-                <h2 class="text-center" style="padding-bottom: 50px; color: #333; font-weight: 900 ">What We Do</h2>
+                <h2 class="text-center" style="padding-bottom: 50px; color: #333; font-weight: 900 ">What we Do</h2>
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6">
@@ -171,8 +178,7 @@
                                 </div>
                                 <h5>Procurement & Supply Chain Management</h5>
                             </div>
-                            <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                                procurement solutions to our client</p>
+                            <p>We leverage on the professional experience of our procurement team to deliver bespoke procurement solutions to our client.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -181,11 +187,9 @@
                                 <div class="si-icon">
                                     <img src="img/icons/helmet.png" alt="">
                                 </div>
-                                <h5>
-                                    Engineering Support Services and High Definition Surveying</h5>
+                                <h5>Engineering Support Services and High Definition Surveying</h5>
                             </div>
-                            <p>Phiozah offers top notch engineering support
-                                services.</p>
+                            <p>Phiozah offers top notch engineering support services.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -194,12 +198,9 @@
                                 <div class="si-icon">
                                     <img src="img/icons/wind-engine.png" alt="">
                                 </div>
-                                <h5>
-                                    Project Management</h5>
+                                <h5>Project Management</h5>
                             </div>
-                            <p>We provide our clients with absolute value for money by ensuring we provide quality
-                                project
-                                management services that are affordable and delivered right on schedule. </p>
+                            <p>We provide our clients with absolute value for money by ensuring we provide quality project management services that are affordable and delivered right on schedule.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -210,12 +211,10 @@
                                 </div>
                                 <h5>Technical Manpower Supply</h5>
                             </div>
-                            <p>Our company prides itself on the ability to source highly competent and professionals to
-                                support
-                                your operations in the areas of engineering services, offshore and onshore. </p>
+                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore. </p>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
@@ -226,7 +225,7 @@
                             <p>Our meet and greet services are designed bearing in mind the
                                 need to provide ease and seamless airport to accommodation transition. We understand
                                 that arriving
-                                in foreign airports could be unassuming </p>
+                                in foreign airports could be unassuming.</p>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6">
@@ -323,19 +322,16 @@
 				</div>
 			</div> -->
             <div class="client-text">
-
                 <!-- <h2>Let's build something together.</h2> -->
-                <p>Let's build something together.
-                </p>
+                <p>Let's build something together.</p>
                 <a href="contact.php#section1" class="fb-more-btn">Contact Us</a>
             </div>
         </div>
     </section>
     <!-- Clients section end  -->
 
-
+    
     <?php include 'footer.php' ?>
-
 </body>
 
 </html>

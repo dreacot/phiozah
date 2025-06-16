@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>Phiozah | Our Services</title>
@@ -64,8 +64,8 @@
                         <img src="img/icons/phone.png" alt="" class="">
                     </div>
                     <div class="hib-text">
-                        <h6>+234 705 3945 678</h6>
-                        <p>info@phiozah.com</p>
+                        <h6><a href="tel:+234 705 3945 678">+234 705 3945 678</a></h6>
+                        <a href="mailto:info@phiozah.com">info@phiozah.com</a>
                     </div>
                 </div>
                 <!-- <div class="header-info-box">
@@ -83,20 +83,26 @@
             <nav class="site-nav-menu">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About us</a></li>
+                    <li><a href="about.php">About us</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.php#section1">Who We Are</a></li>
+                            <li><a href="about.php#section2">Our Vision</a></li>
+                            <li><a href="about.php#section3">Partners</a></li>
+                            <!-- <li><a href="about.php#section4">Projects</a></li> -->
+                            <li><a href="about.php#section5">Quality Policy</a></li>
+                        </ul>
+                    </li>
                     <li class="active"><a href="solutions.php">Our Services</a>
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
+                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                         </ul>
                     </li>
-
-
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -123,8 +129,7 @@
     <section class="services-2-section spad">
         <div class="container">
             <div class="service-text">
-                <h2>At Phiozah, we understand the importance of timely delivery of materials and or services per desired
-                    quality.</h2>
+                <h2>At Phiozah, we understand the importance of timely delivery of materials and or services per desired  quality.</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -136,7 +141,7 @@
                             <h5>Procurement & Supply Chain Management</h5>
                         </div>
                         <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                            procurement solutions to our client </p>
+                            procurement solutions to our client.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -172,8 +177,7 @@
                             </div>
                             <h5>Technical Manpower Supply</h5>
                         </div>
-                        <p>Our company prides itself on the ability to source highly competent and professionals to
-                            support
+                        <p>Our company prides itself on its ability to source experienced competent professionals to support
                             your operations in the areas of engineering services, offshore and onshore. </p>
                     </div>
                 </div>
@@ -188,7 +192,7 @@
                         <p>Our meet and greet services are designed bearing in mind the
                             need to provide ease and seamless airport to accommodation transition. We understand that
                             arriving
-                            in foreign airports could be unassuming </p>
+                            in foreign airports could be unassuming.</p>
                     </div>
                 </div>
             </div>
@@ -244,12 +248,9 @@
                                 <li>Strategic Sourcing</li>
                                 <li>Purchasing</li>
                                 <li>Inspection and QA/QC</li>
-                                <li> Logistics
-                                </li>
-                                <li> Warehousing and Material Management
-                                </li>
+                                <li> Logistics</li>
+                                <li> Warehousing and Material Management</li>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                             <!-- <h2>Engineering Support Services and
@@ -287,8 +288,7 @@
                         </div>
                         <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>We pride ourselves in our ability to source highly competent professionals to support
-                                your operations in the areas of engineering services, offshore and onshore.
+                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore.
                             </p>
                             <p>We provide manpower services to support your project in the underlisted areas:</p>
                             <div class="service-li">
@@ -333,7 +333,8 @@
                                 meet you or your traveler(s) after you exit from the air-bridge and where applicable
                                 assist in
                                 ensuring smooth immigration clearance. When exiting, our team will ensure your exit is
-                                stress-free.</p>
+                                stress-free.
+                            </p>
 
                             <p>Below is a breakdown of how our Meet and Greet Service works:</p>
 

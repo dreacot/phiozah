@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>Phiozah | About Us</title>
@@ -64,8 +64,8 @@
                         <img src="img/icons/phone.png" alt="" class="">
                     </div>
                     <div class="hib-text">
-                        <h6>+234 705 3945 678</h6>
-                        <p>info@phiozah.com</p>
+                        <h6><a href="tel:+234 705 3945 678">+234 705 3945 678</a></h6>
+                        <a href="mailto:info@phiozah.com">info@phiozah.com</a>
                     </div>
                 </div>
                 <!-- <div class="header-info-box">
@@ -83,18 +83,25 @@
             <nav class="site-nav-menu">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li class="active"><a href="about.php">About us</a></li>
+                    <li class="active"><a href="about.php">About us</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.php#section1">Who We Are</a></li>
+                            <li><a href="about.php#section2">Our Vision</a></li>
+                            <li><a href="about.php#section3">Partners</a></li>
+                            <!-- <li><a href="about.php#section4">Projects</a></li> -->
+                            <li><a href="about.php#section5">Quality Policy</a></li>
+                        </ul>
+                    </li>
                     <li><a href="solutions.php">Our Services</a>
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition
-                                    Surveying</a></li>
+                            <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                         </ul>
                     </li>
-
+                    <li><a href="gallery.php">Gallery</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
@@ -124,11 +131,8 @@
     <section class="about-section spad" id='section1'>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6" style="
-				margin: auto; color: skyblue;
-			">
-                    <h1 style="color: skyblue;
-				">
+                <div class="col-lg-6" style="margin: auto; color: skyblue;">
+                    <h1 style="color: skyblue;">
                         Who We Are?
                     </h1>
                 </div>
@@ -170,8 +174,8 @@
     <!-- About section end -->
 
     <!-- Milestones section -->
-    <section class="milestones-section " data-setbg="img/milestones-bg.jpg"
-        style="margin-bottom: 100px; background: aliceblue;">
+    <section id='section2' class="milestones-section " data-setbg="img/milestones-bg.jpg"
+        style="background: aliceblue;">
         <div class="container text-white">
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
@@ -237,6 +241,56 @@
     </section>
     <!-- Milestones section end -->
 
+    <!-- Partners section -->
+    <section id='section3' class="partners-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="partners-text">
+                        <h2 style="color: skyblue; text-align: center; margin-bottom: 20px">Our Partners</h2>
+                        <p>At Phiozah, we are proud to collaborate with a network of esteemed partners who share our commitment to excellence, innovation, and sustainable growth in the oil and gas industry. These strategic alliances strengthen our ability to deliver world-class solutions, uphold the highest safety and environmental standards, and drive value across every stage of our operations. Together, we are powering progress and shaping the future of energy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="partners-logos-container">
+                        <img src="img/partners/dangote.png" alt="">
+                        <img src="img/partners/savannah.png" alt="">
+                        <img src="img/partners/aradel.png" alt="">
+                        <img src="img/partners/egbin.png" alt="">
+                        <img src="img/partners/eatlng.png" alt="">
+                        <img src="img/partners/seplat.png" alt="">
+                        <img src="img/partners/undp.png" alt="">
+                        <img src="img/partners/step.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners section end -->
+
+    <!-- Quality Section -->
+    <section class="quality-section spad">
+        <h2 style="color: skyblue; text-align: center; margin-bottom: 20px">
+            Quality and safety
+        </h2>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="about-text ">
+                        <p>Quality and Safety for our consumers is Phiozah’s top priority. Quality assurance and product safety is one of Phiozah’s Core Values, which form the foundation of all we do.</p>
+
+                        <p>Our actions to ensure quality are guided by the company’s <a href="PHIOZAH'S-QUALITY-POLICY-signed.pdf" target="_blank">Quality Policy (pdf, 534 Kb)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Quality section end -->
+
+    <!-- Milestones section end -->
+
     <!-- Team section -->
     <!-- <section class="team-section spad">
 		<div class="container">
@@ -282,7 +336,6 @@
 		</div>
 	</section> -->
     <!-- Team section end -->
-
 
     <?php include 'footer.php' ?>
 

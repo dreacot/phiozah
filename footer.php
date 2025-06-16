@@ -1,3 +1,8 @@
+  <!-- scroll to top -->
+  <div class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fa fa-angle-up"></i>
+  </div>
+
 <!-- Footer section -->
 <footer class="footer-section spad">
     <div class="container">
@@ -13,16 +18,18 @@
                         <a href=""><i class="fa fa-facebook"></i></a>
                         <a href=""><i class="fa fa-twitter"></i></a>
                         <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/phiozah-limited/" target=_blank><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget">
                     <h2 class="fw-title">Useful Resources</h2>
-                    <ul>
+                    <ul class="footer-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="solutions.php">Our Services</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
@@ -58,7 +65,8 @@
                             <img src="img/icons/phone.png" alt="" class="">
                         </div>
                         <div class="fib-text">
-                            <p>+234 705 3945 678<br>info@phiozah.com</p>
+                            <p><a href="tel:+234 705 3945 678">+234 705 3945 678</a></p>
+                            <a href="mailto:info@phiozah.com" target=_blank>info@phiozah.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -82,8 +90,8 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="Our Services.html">Our Services</a></li>
-
-                        <li class="active"><a href="contact.php">Contact</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
             </div>
