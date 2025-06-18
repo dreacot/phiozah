@@ -140,8 +140,7 @@
                             </div>
                             <h5>Procurement & Supply Chain Management</h5>
                         </div>
-                        <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                            procurement solutions to our client.</p>
+                        <p>We harness the deep industry expertise of our procurement team to deliver tailored, high-impact procurement solutions that align perfectly with each client's unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -150,11 +149,9 @@
                             <div class="si-icon">
                                 <img src="img/icons/helmet.png" alt="">
                             </div>
-                            <h5>Engineering Support Services and
-                                High Definition Surveying</h5>
+                            <h5>Engineering Support Services and High Definition Surveying</h5>
                         </div>
-                        <p>Our Procurement teams are highly trained in the best global practices of managing the
-                            different phases of project material procurement.</p>
+                        <p>Our Procurement teams are highly trained in the best global practices of managing the different phases of project material procurement.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -165,8 +162,7 @@
                             </div>
                             <h5>Project Management</h5>
                         </div>
-                        <p>We provide our clients with absolute value for money by ensuring we provide quality project
-                            management services that are affordable and delivered right on schedule. </p>
+                        <p>At Phiozah Limited, we deliver exceptional project management services designed to maximize value and efficiency. Our focus is on quality, cost-effectiveness, and timely execution, ensuring every project is completed on schedule and within budget, without compromising standards.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -177,11 +173,10 @@
                             </div>
                             <h5>Technical Manpower Supply</h5>
                         </div>
-                        <p>Our company prides itself on its ability to source experienced competent professionals to support
-                            your operations in the areas of engineering services, offshore and onshore. </p>
+                        <p>At Phiozah Limited, we take pride in our ability to provide highly skilled and experienced professionals to support your operations, both offshore and onshore. Whether in engineering, technical services, or field operations, we ensure you have the right talent to drive performance, efficiency, and safety across every project phase.</p>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="service-item">
                         <div class="si-head">
                             <div class="si-icon">
@@ -192,7 +187,8 @@
                         <p>Our meet and greet services are designed bearing in mind the
                             need to provide ease and seamless airport to accommodation transition. We understand that
                             arriving
-                            in foreign airports could be unassuming.</p>
+                            in foreign airports could be unassuming.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -238,8 +234,7 @@
 								High Definition Surveying</h2> -->
                             <p>At Phiozah, we understand the importance of timely delivery of materials and or services
                                 per desired quality. </p>
-                            <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                                procurement solutions to our client.</p>
+                            <p>We harness the deep industry expertise of our procurement team to deliver tailored, high-impact procurement solutions that align perfectly with each client's unique needs.</p>
                             <p>Through local and International sourcing, we provide effective end to end procurement
                                 services that are in line with international standards, meets clients budget and
                                 delivered right on time.</p>
@@ -269,15 +264,16 @@
                         </div>
                         <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>Using an array of skills, resource and experience, our project management team brings
-                                innovative capabilities and technical know-how in managing complex projects from project
-                                conception, planning, execution, control and monitoring to final project close-out.
+                            <p>
+                                Using an array of skills, resource and experience, our project management team brings innovative capabilities and technical know-how in managing complex projects from project conception, planning, execution, control and monitoring to final project close-out.
                             </p>
-                            <p>We provide our clients with absolute value for money by ensuring we provide quality
-                                project management services that are affordable and delivered right on schedule.
 
+                            <p>
+                                At Phiozah Limited, we deliver exceptional project management services designed to maximize value and efficiency. Our focus is on quality, cost-effectiveness, and timely execution—ensuring every project is completed on schedule and within budget, without compromising standards.
                             </p>
-                            <p>With a highly skilled and experienced team and an outlook based firmly on global best
+
+                            <p>
+                                With a highly skilled and experienced team and an outlook based firmly on global best
                                 practices,
                                 we are better emplaced to assist in projects of all sizes. Our comprehensive project
                                 management
@@ -288,7 +284,8 @@
                         </div>
                         <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore.
+                            <p>
+                                At Phiozah Limited, we take pride in our ability to provide highly skilled and experienced professionals to support your operations—both offshore and onshore. Whether in engineering, technical services, or field operations, we ensure you have the right talent to drive performance, efficiency, and safety across every project phase.
                             </p>
                             <p>We provide manpower services to support your project in the underlisted areas:</p>
                             <div class="service-li">

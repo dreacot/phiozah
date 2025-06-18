@@ -178,7 +178,9 @@
                                 </div>
                                 <h5>Procurement & Supply Chain Management</h5>
                             </div>
-                            <p>We leverage on the professional experience of our procurement team to deliver bespoke procurement solutions to our client.</p>
+                            <p>
+                                We harness the deep industry expertise of our procurement team to deliver tailored, high-impact procurement solutions that align perfectly with each client's unique needs.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -200,7 +202,9 @@
                                 </div>
                                 <h5>Project Management</h5>
                             </div>
-                            <p>We provide our clients with absolute value for money by ensuring we provide quality project management services that are affordable and delivered right on schedule.</p>
+                            <p>
+                                At Phiozah Limited, we deliver exceptional project management services designed to maximize value and efficiency. Our focus is on quality, cost-effectiveness, and timely execution—ensuring every project is completed on schedule and within budget, without compromising standards.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -211,7 +215,9 @@
                                 </div>
                                 <h5>Technical Manpower Supply</h5>
                             </div>
-                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore. </p>
+                            <p>
+                                At Phiozah Limited, we take pride in our ability to provide highly skilled and experienced professionals to support your operations—both offshore and onshore. Whether in engineering, technical services, or field operations, we ensure you have the right talent to drive performance, efficiency, and safety across every project phase.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -222,10 +228,12 @@
                                 </div>
                                 <h5>Meet & Greet Service</h5>
                             </div>
-                            <p>Our meet and greet services are designed bearing in mind the
+                            <p>
+                                Our meet and greet services are designed bearing in mind the
                                 need to provide ease and seamless airport to accommodation transition. We understand
                                 that arriving
-                                in foreign airports could be unassuming.</p>
+                                in foreign airports could be unassuming.
+                            </p>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6">
@@ -270,14 +278,9 @@
                         <div class="fb-text">
                             <h2 style="padding-bottom: 50px; color: #333; font-weight: 900 ">Who We Are</h2>
                             <br>
-                            <p>Phiozah Limited is a fast rising 100% Nigerian indigenous oil services company,
-                                incorporated to
-                                be a leading provider of procurement & supply chain services, project management,
-                                Engineering &
-                                Engineering support services, offshore vessel support, Meet & Greet services and
-                                technical manpower supply in
-                                Nigerian
-                                and West African. </p>
+                            <p>
+                                Phiozah Limited is a rapidly growing, 100% Nigerian-owned company positioned to become a leading force in the oil and gas services sector across Nigeria and West Africa. We specialize in procurement and supply chain solutions, project management, engineering and technical support, offshore vessel services, Meet & Greet logistics, and technical manpower supply.
+                            </p>
                             <a href="about.php#section1" class="fb-more-btn">Read More</a>
                         </div>
                     </div>
