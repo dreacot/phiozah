@@ -97,6 +97,7 @@
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
                             <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
+                            <li><a href="solutions.php#section1">Asset Integrity & Maintenance Services</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
@@ -187,11 +188,24 @@
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
-                                    <img src="img/icons/helmet.png" alt="">
+                                    <img src="img/icons/pumpjack.png" alt="">
                                 </div>
                                 <h5>Engineering Support Services and High Definition Surveying</h5>
                             </div>
                             <p>Phiozah offers top notch engineering support services.</p>
+                        </div>
+                    </div>
+                                        <div class="col-lg-6 col-md-6">
+                        <div class="service-item">
+                            <div class="si-head">
+                                <div class="si-icon">
+                                    <img src="img/icons/pollution.png" alt="">
+                                </div>
+                                <h5>Asset Integrity & Maintenance Services</h5>
+                            </div>
+                            <p>
+                               Phiozah Ltd delivers specialized Asset Integrity and Maintenance solutions tailored to extend asset life, ensure operational safety, and minimize downtime. Our services are designed to meet evolving industry demands, particularly for aging infrastructure, and are delivered with a focus on safety, quality, and efficiency.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -211,7 +225,7 @@
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
-                                    <img src="img/icons/pollution.png" alt="">
+                                    <img src="img/icons/helmet.png" alt="">
                                 </div>
                                 <h5>Technical Manpower Supply</h5>
                             </div>
@@ -224,7 +238,7 @@
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
-                                    <img src="img/icons/pollution.png" alt="">
+                                    <img src="img/icons/map-marker.png" alt="">
                                 </div>
                                 <h5>Meet & Greet Service</h5>
                             </div>

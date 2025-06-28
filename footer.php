@@ -37,12 +37,11 @@
                     <h2 class="fw-title">Our Services</h2>
                     <ul>
                         <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                        <li><a href="solutions.php#section1">
-                                Engineering Support Services and High Definition Surveying</a></li>
-                        <li><a href="solutions.php#section1">
-                                Project Management</a></li>
-                        <li><a href="solutions.php#section1">
-                                Technical Manpower Supply</a></li>
+                        <li><a href="solutions.php#section1"> Engineering Support Services and High Definition Surveying</a></li>
+                        <li><a href="solutions.php#section1">Asset Integrity & Maintenance Services</a></li>
+                        <li><a href="solutions.php#section1"> Project Management</a></li>
+                        <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
+                        <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                     </ul>
                 </div>
             </div>
