@@ -96,6 +96,7 @@
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
                             <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
+                            <li><a href="solutions.php#section1">Asset Integrity & Maintenance Services</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
@@ -129,7 +130,7 @@
     <section class="services-2-section spad">
         <div class="container">
             <div class="service-text">
-                <h2>At Phiozah, we understand the importance of timely delivery of materials and or services per desired  quality.</h2>
+                <h2><b>At Phiozah, we understand the importance of timely delivery of materials and or services per desired  quality.</b></h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -140,8 +141,7 @@
                             </div>
                             <h5>Procurement & Supply Chain Management</h5>
                         </div>
-                        <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                            procurement solutions to our client.</p>
+                        <p>We harness the deep industry expertise of our procurement team to deliver tailored, high-impact procurement solutions that align perfectly with each client's unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -150,11 +150,22 @@
                             <div class="si-icon">
                                 <img src="img/icons/helmet.png" alt="">
                             </div>
-                            <h5>Engineering Support Services and
-                                High Definition Surveying</h5>
+                            <h5>Engineering Support Services and High Definition Surveying</h5>
                         </div>
-                        <p>Our Procurement teams are highly trained in the best global practices of managing the
-                            different phases of project material procurement.</p>
+                        <p>Our Procurement teams are highly trained in the best global practices of managing the different phases of project material procurement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="service-item">
+                        <div class="si-head">
+                            <div class="si-icon">
+                                <img src="img/icons/pollution.png" alt="">
+                            </div>
+                            <h5>Facility Maintenance & Corrosion Control</h5>
+                        </div>
+                        <p>
+                            Phiozah Ltd is an ISO-certified engineering services firm specializing in corrosion control and facility maintenance for the oil and gas industry. We deliver quality, efficiency,and safety-driven solutions that extend asset life, minimize downtime, and ensure operational excellence.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -165,36 +176,38 @@
                             </div>
                             <h5>Project Management</h5>
                         </div>
-                        <p>We provide our clients with absolute value for money by ensuring we provide quality project
-                            management services that are affordable and delivered right on schedule. </p>
+                        <p>At Phiozah Limited, we deliver exceptional project management services designed to maximize value and efficiency. Our focus is on quality, cost-effectiveness, and timely execution, ensuring every project is completed on schedule and within budget, without compromising standards.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="service-item">
-                        <div class="si-head">
-                            <div class="si-icon">
-                                <img src="img/icons/pollution.png" alt="">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-item">
+                            <div class="si-head">
+                                <div class="si-icon">
+                                    <img src="img/icons/helmet.png" alt="">
+                                </div>
+                                <h5>Technical Manpower Supply</h5>
                             </div>
-                            <h5>Technical Manpower Supply</h5>
+                            <p>
+                                At Phiozah Limited, we take pride in our ability to provide highly skilled and experienced professionals to support your operations—both offshore and onshore. Whether in engineering, technical services, or field operations, we ensure you have the right talent to drive performance, efficiency, and safety across every project phase.
+                            </p>
                         </div>
-                        <p>Our company prides itself on its ability to source experienced competent professionals to support
-                            your operations in the areas of engineering services, offshore and onshore. </p>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                    <div class="service-item">
-                        <div class="si-head">
-                            <div class="si-icon">
-                                <img src="img/icons/pollution.png" alt="">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-item">
+                            <div class="si-head">
+                                <div class="si-icon">
+                                    <img src="img/icons/map-marker.png" alt="">
+                                </div>
+                                <h5>Meet & Greet Service</h5>
                             </div>
-                            <h5>Meet & Greet Service</h5>
+                            <p>
+                                Our meet and greet services are designed bearing in mind the
+                                need to provide ease and seamless airport to accommodation transition. We understand
+                                that arriving
+                                in foreign airports could be unassuming.
+                            </p>
                         </div>
-                        <p>Our meet and greet services are designed bearing in mind the
-                            need to provide ease and seamless airport to accommodation transition. We understand that
-                            arriving
-                            in foreign airports could be unassuming.</p>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -217,16 +230,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3"
+                                aria-selected="false">Asset Integrity & Maintenance Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4"
                                 aria-selected="false">
                                 Project Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4"
+                            <a class="nav-link" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5"
                                 aria-selected="false">Technical Manpower Supply</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5"
-                                aria-selected="false">Meet & Greet Service</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6"
+                                aria-selected="false">Meet & Greet Service
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -238,8 +256,7 @@
 								High Definition Surveying</h2> -->
                             <p>At Phiozah, we understand the importance of timely delivery of materials and or services
                                 per desired quality. </p>
-                            <p>We leverage on the professional experience of our procurement team to deliver bespoke
-                                procurement solutions to our client.</p>
+                            <p>We harness the deep industry expertise of our procurement team to deliver tailored, high-impact procurement solutions that align perfectly with each client's unique needs.</p>
                             <p>Through local and International sourcing, we provide effective end to end procurement
                                 services that are in line with international standards, meets clients budget and
                                 delivered right on time.</p>
@@ -269,15 +286,31 @@
                         </div>
                         <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>Using an array of skills, resource and experience, our project management team brings
-                                innovative capabilities and technical know-how in managing complex projects from project
-                                conception, planning, execution, control and monitoring to final project close-out.
+                            <p>
+                                Phiozah Ltd delivers specialized Asset Integrity and Maintenance solutions tailored to extend asset life, ensure operational safety, and minimize downtime. Our services are designed to meet evolving industry demands, particularly for aging infrastructure, and are delivered with a focus on safety, quality, and efficiency.
                             </p>
-                            <p>We provide our clients with absolute value for money by ensuring we provide quality
-                                project management services that are affordable and delivered right on schedule.
+                            <p>Our core services include:</p>
+                            <div class="service-li">
+                                <li>Corrosion Control & Leak Repair</li>
+                                <li>NDT & Inspection Services</li>
+                                <li>Flange Management & Bolting Solutions</li>
+                                <li>Blasting, coating, and industrial painting for corrosion prevention & control.</li>
+                                <li>Height Access & Maintenance (Scaffolding and Rope Access)</li>
+                            </div><br>
+                            <p>Phiozah Ltd ensures that your assets remain compliant, efficient, and productive—delivered with precision, integrity, and a commitment to excellence.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                            <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
+                            <p>
+                                Using an array of skills, resource and experience, our project management team brings innovative capabilities and technical know-how in managing complex projects from project conception, planning, execution, control and monitoring to final project close-out.
+                            </p>
 
+                            <p>
+                                At Phiozah Limited, we deliver exceptional project management services designed to maximize value and efficiency. Our focus is on quality, cost-effectiveness, and timely execution—ensuring every project is completed on schedule and within budget, without compromising standards.
                             </p>
-                            <p>With a highly skilled and experienced team and an outlook based firmly on global best
+
+                            <p>
+                                With a highly skilled and experienced team and an outlook based firmly on global best
                                 practices,
                                 we are better emplaced to assist in projects of all sizes. Our comprehensive project
                                 management
@@ -286,9 +319,10 @@
                                 clearly defined goals and objectives
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
-                            <p>Our company prides itself on its ability to source experienced competent professionals to support your operations in the areas of engineering services, offshore and onshore.
+                            <p>
+                                At Phiozah Limited, we take pride in our ability to provide highly skilled and experienced professionals to support your operations—both offshore and onshore. Whether in engineering, technical services, or field operations, we ensure you have the right talent to drive performance, efficiency, and safety across every project phase.
                             </p>
                             <p>We provide manpower services to support your project in the underlisted areas:</p>
                             <div class="service-li">
@@ -314,7 +348,7 @@
                                 </li>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5">
+                        <div class="tab-pane fade" id="tab-6" role="tabpanel" aria-labelledby="tab-6">
                             <!-- <h2>We produce or supply Goods, & Services, Oils & Lubricants</h2> -->
                             <p>Our meet and greet services are designed bearing in mind the need to provide ease and
                                 seamless
