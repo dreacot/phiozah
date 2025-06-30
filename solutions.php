@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
     <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
 
     <!--[if lt IE 9]>
@@ -161,10 +161,10 @@
                             <div class="si-icon">
                                 <img src="img/icons/pollution.png" alt="">
                             </div>
-                            <h5>Facility Maintenance & Corrosion Control</h5>
+                            <h5>Asset Integrity & Maintenance Services</h5>
                         </div>
                         <p>
-                            Phiozah Ltd is an ISO-certified engineering services firm specializing in corrosion control and facility maintenance for the oil and gas industry. We deliver quality, efficiency,and safety-driven solutions that extend asset life, minimize downtime, and ensure operational excellence.
+                            Phiozah Ltd delivers specialized Asset Integrity and Maintenance solutions tailored to extend asset life, ensure operational safety, and minimize downtime. Our services are designed to meet evolving industry demands, particularly for aging infrastructure, and are delivered with a focus on safety, quality, and efficiency.
                         </p>
                     </div>
                 </div>

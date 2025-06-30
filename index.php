@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
     <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 
 
     <!--[if lt IE 9]>
@@ -195,7 +195,7 @@
                             <p>Phiozah offers top notch engineering support services.</p>
                         </div>
                     </div>
-                                        <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="service-item">
                             <div class="si-head">
                                 <div class="si-icon">
