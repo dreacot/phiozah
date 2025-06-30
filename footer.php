@@ -10,10 +10,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="footer-widget about-widget">
                     <img src="img/logo.png" alt="">
-                    <p>Phiozah Limited is a fast rising 100% Nigerian indigenous oil services company, incorporated
-                        to be a leading provider of procurement & supply chain services, project management,
-                        Engineering & Engineering support services, offshore vessel support and technical manpower
-                        supply in Nigerian and West African. </p>
+                    <p>Phiozah Limited is a rapidly growing, 100% Nigerian-owned company positioned to become a leading force in the oil and gas services sector across Nigeria and West Africa. We specialize in procurement and supply chain solutions, project management, engineering and technical support, offshore vessel services, Meet & Greet logistics, and technical manpower supply.</p>
                     <div class="footer-social">
                         <a href=""><i class="fa fa-facebook"></i></a>
                         <a href=""><i class="fa fa-twitter"></i></a>
@@ -40,12 +37,11 @@
                     <h2 class="fw-title">Our Services</h2>
                     <ul>
                         <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
-                        <li><a href="solutions.php#section1">
-                                Engineering Support Services and High Definition Surveying</a></li>
-                        <li><a href="solutions.php#section1">
-                                Project Management</a></li>
-                        <li><a href="solutions.php#section1">
-                                Technical Manpower Supply</a></li>
+                        <li><a href="solutions.php#section1"> Engineering Support Services and High Definition Surveying</a></li>
+                        <li><a href="solutions.php#section1">Asset Integrity & Maintenance Services</a></li>
+                        <li><a href="solutions.php#section1"> Project Management</a></li>
+                        <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
+                        <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
                     </ul>
                 </div>
             </div>

@@ -96,6 +96,7 @@
                         <ul class="sub-menu">
                             <li><a href="solutions.php#section1">Procurement & Supply Chain Management</a></li>
                             <li><a href="solutions.php#section1">Engineering Support Services and High Definition Surveying</a></li>
+                            <li><a href="solutions.php#section1">Asset Integrity & Maintenance Services</a></li>
                             <li><a href="solutions.php#section1">Project Management</a></li>
                             <li><a href="solutions.php#section1">Technical Manpower Supply</a></li>
                             <li><a href="solutions.php#section1">Meet & Greet Service</a></li>
@@ -187,11 +188,7 @@
                             <h3 style="color: skyblue;">Our Vision</h3>
                             <br>
                             <br>
-                            <p>To be an unrivalled company in providing Engineering support, Project Management, Turnkey
-                                Procurement, Meet & Greet
-                                services via a system that
-                                promotes safety, integrity,
-                                consistency, capacity building and professionalism.</p>
+                            <p>To be the trusted partner of choice in delivering exceptional engineering support, project management, turnkey procurement, and Meet & Greet services—driven by a commitment to safety, integrity, consistency, and excellence. We aim to empower our clients' success by building lasting value through innovation, capacity development, and a deep focus on customer satisfaction.</p>
                         </div>
                     </div>
                 </div>
@@ -204,7 +201,7 @@
                             <h3 style="color: skyblue;">Our Mission</h3>
                             <br>
                             <br>
-                            <p>Our mission is to consistently meet stakeholders' expectations. </p>
+                            <p>To deliver exceptional services that exceed the expectations of our clients and stakeholders by upholding the highest standards of quality, reliability, and integrity—while fostering innovation, continuous improvement, and sustainable growth.</p>
                         </div>
                     </div>
                 </div>
@@ -222,16 +219,11 @@
                             <br>
                             <div class="service-li">
                                 <li> Integrity</li>
-                                <li> Service
-                                </li>
+                                <li> Service</li>
                                 <li>Team building</li>
-                                <li> Commitment to Excellence
-                                </li>
-                                <li> Innovation and Continuous
-                                    growth
-                                </li>
-                                <li> Safety
-                                </li>
+                                <li> Commitment to Excellence</li>
+                                <li> Innovation and Continuous growth</li>
+                                <li> Safety</li>
                             </div>
                         </div>
                     </div>
