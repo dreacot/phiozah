@@ -153,6 +153,12 @@
         <img src="img/PhiozahWorkers/w4.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="10" >
         <img src="img/PhiozahWorkers/w5.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="11" >
         <img src="img/PhiozahWorkers/w6.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w7.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w8.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w9.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w10.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w11.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
+        <img src="img/PhiozahWorkers/w12.jpg" class="workers all hvr-grow gallery-img" alt="Phiozah Engineer at work" data-index="12" >
       </div>
     </div>
   </section>
