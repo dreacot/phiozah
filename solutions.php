@@ -226,7 +226,7 @@
                 </div>
 
                 <div class="service-item">
-                    <img class="service-img" src="img/services/manpower2.jpg" alt="image of Technical Manpower Service">
+                    <img class="service-img" src="img/services/manpower.jpg" alt="image of Technical Manpower Service">
                     <div class="si-content">
                         <div class="si-head">
                             <img src="img/icons/helmet.png" alt="">
