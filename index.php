@@ -192,7 +192,7 @@
                                 </div>
                                 <h5>Engineering Support Services and High Definition Surveying</h5>
                             </div>
-                            <p>Phiozah offers top notch engineering support services.</p>
+                            <p>Phiozah offers top notch engineering support services. We utilize cutting edge 3D Laser scanning technology to accurately document the As-Is conditions of existing facilities, carryout Design verifications as well as Dimensional analysis.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
