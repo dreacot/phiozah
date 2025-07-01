@@ -134,7 +134,7 @@
             </div>
             <div class="col">
                 <div class="service-item">
-                    <img class="service-img" src="img/services/procurement.jpg" alt="">
+                    <img class="service-img" src="img/Services/procurement.jpg" alt="">
                     <div class="si-content">
                         <div class="si-head">
                             <img src="img/icons/cogwheel.png" alt="image of procurement service">
@@ -180,11 +180,11 @@
                         <br>
                         <button class="see-more">See more</button>
                     </div>
-                    <img class="service-img" src="img/services/engineering-support.jpg" alt="">
+                    <img class="service-img" src="img/Services/engineering-support.jpg" alt="">
                 </div>
 
                 <div class="service-item">
-                    <img class="service-img" src="img/services/maintenance.jpg" alt="">
+                    <img class="service-img" src="img/Services/maintenance.jpg" alt="">
                     <div class="si-content">
                         <div class="si-head">
                             <img src="img/icons/pollution.png" alt="image of Asset Integrity service">
@@ -222,11 +222,11 @@
                         </div><br>
                         <button class="see-more">See more</button>
                     </div>
-                    <img class="service-img" src="img/services/project-management.jpg" alt="">
+                    <img class="service-img" src="img/Services/project-management.jpg" alt="">
                 </div>
 
                 <div class="service-item">
-                    <img class="service-img" src="img/services/manpower.jpg" alt="image of Technical Manpower Service">
+                    <img class="service-img" src="img/Services/manpower.jpg" alt="image of Technical Manpower Service">
                     <div class="si-content">
                         <div class="si-head">
                             <img src="img/icons/helmet.png" alt="">
@@ -301,7 +301,7 @@
                         </div><br>
                         <button class="see-more">See more</button>
                     </div>
-                    <img class="service-img" src="img/services/meet-and-greet.jpg" alt="">
+                    <img class="service-img" src="img/Services/meet-and-greet.jpg" alt="">
                 </div>
 
                 <!-- <div class="col-lg-6 col-md-6">
