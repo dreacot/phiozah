@@ -250,7 +250,7 @@
                         <img src="img/partners/dangote.png" alt="">
                         <img src="img/partners/savannah.png" alt="">
                         <img src="img/partners/aradel.png" alt="">
-                        <img src="img/partners/egbin.png" alt="">
+                        <img src="img/partners/Egbin.png" alt="">
                         <img src="img/partners/eatlng.png" alt="">
                         <img src="img/partners/seplat.png" alt="">
                         <img src="img/partners/undp.png" alt="">
