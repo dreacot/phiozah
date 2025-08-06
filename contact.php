@@ -97,7 +97,12 @@ if($_POST) {
 
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+// Get current year-month in “YYYY-MM” format
+if (date('Y-m') === '2025-08') {
+    include 'banner.php';
+}
+?>
 <head>
     <title>Phiozah | Contact Us</title>
     <meta charset="UTF-8">

@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+// Get current year-month in “YYYY-MM” format
+if (date('Y-m') === '2025-08') {
+    include 'banner.php';
+}
+?>
 <head>
   <title>Phiozah | Our Gallery</title>
   <meta charset="UTF-8">
